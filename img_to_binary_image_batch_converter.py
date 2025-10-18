@@ -4,11 +4,11 @@ from PIL import Image
 
 # --- Configuration ---
 # 1. Path to the directory containing your 5300 images.
-SOURCE_FOLDER = r'/home/saidul/Desktop/4-1/AI/HandwrittenDigits/drive-download-20250906T193307Z-1-001/images'
+SOURCE_FOLDER = r'/home/saidul/Desktop/Input'
 
 # 2. Path to the folder where processed images will be saved.
 #    This folder will be created automatically if it doesn't exist.
-OUTPUT_FOLDER = r'/home/saidul/Desktop/4-1/AI/HandwrittenDigits/drive-download-20250906T193307Z-1-001/processed_images'
+OUTPUT_FOLDER = r'/home/saidul/Desktop/Output'
 
 # 3. Define which file types to process.
 IMAGE_EXTENSIONS = ('.jpg')
@@ -16,10 +16,6 @@ IMAGE_EXTENSIONS = ('.jpg')
 
 
 def process_image(input_path: str, output_path: str):
-    """
-    Resizes an image to 28x28 and converts it to a binary format.
-    Returns True on success, False on failure.
-    """
     try:
         # Open the image
         img = Image.open(input_path)

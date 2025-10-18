@@ -4,11 +4,11 @@ import shutil
 
 # --- Configuration ---
 # 1. Path to the main folder containing your 10 subfolders.
-SOURCE_ROOT = r'/home/saidul/Desktop/4-1/AI/HandwrittenDigits/drive-download-20250906T193307Z-1-001' 
+SOURCE_ROOT = r'/home/saidul/Desktop/Root' 
 
 # 2. Path to the single folder where you want all images to go.
 #    This folder will be created if it doesn't exist.
-DESTINATION_FOLDER = r'/home/saidul/Desktop/4-1/AI/HandwrittenDigits/drive-download-20250906T193307Z-1-001/images'
+DESTINATION_FOLDER = r'/home/saidul/Desktop/Output'
 
 # 3. Define which file types to look for.
 IMAGE_EXTENSIONS = ('.jpg')
