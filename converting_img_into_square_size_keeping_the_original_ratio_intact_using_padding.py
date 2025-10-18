@@ -1,3 +1,4 @@
+# This script resize and convert all images of a folder into square shape using padding when necessary to preserve the aspect ratio
 from PIL import Image
 import os
 
@@ -32,7 +33,7 @@ def make_square_image(input_path, output_path, fill_color=(255, 255, 255)):
         square_img.save(output_path)
 
 # Batch process all images in a folder
-input_folder = "/home/saidul/Desktop"  # Replace with your input folder
+input_folder = "/home/saidul/Desktop/Input"  # Replace with your input folder
 output_folder = "/home/saidul/Desktop/Output"  # Replace with your output folder
 os.makedirs(output_folder, exist_ok=True)
 
